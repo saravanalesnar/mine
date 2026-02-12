@@ -16,8 +16,8 @@ try {
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
     $mail->Port       = 587;
 
-    $mail->setFrom('msakthivel.bear@gmail.com', 'Your Name');
-    $mail->addAddress('RECIPIENT_EMAIL@gmail.com', 'My Love'); // CHANGE THIS TO HER EMAIL
+    $mail->setFrom('msakthivel.bear@gmail.com', 'sakthi');
+    $mail->addAddress('msakthivel.bear@gmail.com', 'sakthi'); // CHANGE THIS TO HER EMAIL
 
     $mail->isHTML(true);
     $mail->Subject = 'I Love You';
