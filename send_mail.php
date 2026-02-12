@@ -8,27 +8,23 @@ require 'vendor/autoload.php';
 $mail = new PHPMailer(true);
 
 try {
-    //Server settings
-    $mail->SMTPDebug = SMTP::DEBUG_SERVER;
     $mail->isSMTP();
-    $mail->Host       = 'smtp.gmail.com';                       //gmail SMTP server set to send through
+    $mail->Host       = 'smtp.gmail.com';
     $mail->SMTPAuth   = true;
-    $mail->Username   = 'msakthivel.bear@gmail.com';                     //SMTP username (your gmail account)
-    $mail->Password   = 'Radhika@66';                               //SMTP password (your gmail password or app password)
-    $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
-    $mail->Port       = 465;
+    $mail->Username   = getenv('EMAIL_USERNAME'); 
+    $mail->Password   = getenv('EMAIL_PASSWORD'); 
+    $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+    $mail->Port       = 587;
 
-    //Recipients
-    $mail->setFrom('msakthivel.bear@gmail.com', 'Mailer');         //Set the sender of the message (your email address)
-    $mail->addAddress('msakthivel.bear@gmail.com', 'Joe User');     //Add a recipient (your bae's email address)
+    $mail->setFrom('msakthivel.bear@gmail.com', 'Your Name');
+    $mail->addAddress('RECIPIENT_EMAIL@gmail.com', 'My Love'); // CHANGE THIS TO HER EMAIL
 
-    //Content
     $mail->isHTML(true);
     $mail->Subject = 'I Love You';
-    $mail->Body    = 'Happy Valentine Day My Love. I love you so much. You are the best thing that has ever happened to me ❤';
+    $mail->Body    = 'Happy Valentine Day My Love. I love you so much. ❤️';
 
     $mail->send();
     echo 'Message has been sent';
 } catch (Exception $e) {
-    echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+    echo "Mailer Error: {$mail->ErrorInfo}";
 }
