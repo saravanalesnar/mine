@@ -91,13 +91,13 @@ function drawText() {
 
     if(frameNumber < 250){
         context.fillStyle = `rgba(45, 45, 255, ${opacity})`;
-        context.fillText("As planet spins around his sun", canvas.width/2, canvas.height/2);
+        context.fillText("As planet spins around his sun,A farm embraces the autumn leaves", canvas.width/2, canvas.height/2);
         opacity = opacity + 0.01;
     }
     //fades out the text by decreasing the opacity
     if(frameNumber >= 250 && frameNumber < 500){
         context.fillStyle = `rgba(45, 45, 255, ${opacity})`;
-        context.fillText("As planet spins around his sun", canvas.width/2, canvas.height/2);
+        context.fillText("As planet spins around his sun,A farm embraces the autumn leaves", canvas.width/2, canvas.height/2);
         opacity = opacity - 0.01;
     }
 
@@ -109,9 +109,9 @@ function drawText() {
         context.fillStyle = `rgba(45, 45, 255, ${opacity})`;
 
         if (window.innerWidth < 600) {           //shortens long sentence for mobile screens
-            drawTextWithLineBreaks(["A farm embraces the autumn leaves"], canvas.width / 2, canvas.height / 2, fontSize, lineHeight);
+            drawTextWithLineBreaks(["a cozy dreamless sleep in winters,Sip of a warm tea"], canvas.width / 2, canvas.height / 2, fontSize, lineHeight);
         } else {
-            context.fillText("A farm embraces the autumn leaves", canvas.width/2, canvas.height/2);
+            context.fillText("a cozy dreamless sleep in winters,Sip of a warm tea", canvas.width/2, canvas.height/2);
         }
 
         opacity = opacity + 0.01;
@@ -120,9 +120,9 @@ function drawText() {
         context.fillStyle = `rgba(45, 45, 255, ${opacity})`;
         
         if (window.innerWidth < 600) {
-            drawTextWithLineBreaks(["a cozy dreamless sleep in winters "], canvas.width / 2, canvas.height / 2, fontSize, lineHeight);
+            drawTextWithLineBreaks(["Old wooden smell on paper books, Warmth of heat in cold hearts of mine"], canvas.width / 2, canvas.height / 2, fontSize, lineHeight);
         } else {
-            context.fillText("a cozy dreamless sleep in winters ", canvas.width/2, canvas.height/2);
+            context.fillText("Old wooden smell on paper books, Warmth of heat in cold hearts of mine ", canvas.width/2, canvas.height/2);
         }
 
         opacity = opacity - 0.01;
@@ -133,12 +133,12 @@ function drawText() {
     }
     if(frameNumber > 1000 && frameNumber < 1250){
         context.fillStyle = `rgba(45, 45, 255, ${opacity})`;
-        context.fillText("Sip of a warm tea", canvas.width/2, canvas.height/2);
+        context.fillText("Longed comfort of lifetimes,Peace silence", canvas.width/2, canvas.height/2);
         opacity = opacity + 0.01;
     }
     if(frameNumber >= 1250 && frameNumber < 1500){
         context.fillStyle = `rgba(45, 45, 255, ${opacity})`;
-        context.fillText("Sip of a warm tea", canvas.width/2, canvas.height/2);
+        context.fillText("Longed comfort of lifetimes,Peace silence", canvas.width/2, canvas.height/2);
         opacity = opacity - 0.01;
     }
 
@@ -147,12 +147,12 @@ function drawText() {
     }
     if(frameNumber > 1500 && frameNumber < 1750){
         context.fillStyle = `rgba(45, 45, 255, ${opacity})`;
-        context.fillText("Old wooden smell on paper books", canvas.width/2, canvas.height/2);
+        context.fillText("stability ,Red roses and letters", canvas.width/2, canvas.height/2);
         opacity = opacity + 0.01;
     }
     if(frameNumber >= 1750 && frameNumber < 2000){
         context.fillStyle = `rgba(45, 45, 255, ${opacity})`;
-        context.fillText("Old wooden smell on paper books", canvas.width/2, canvas.height/2);
+        context.fillText("stability ,Red roses and letters", canvas.width/2, canvas.height/2);
         opacity = opacity - 0.01;
     }
 
@@ -174,9 +174,9 @@ function drawText() {
         context.fillStyle = `rgba(45, 45, 255, ${opacity})`;
 
         if (window.innerWidth < 600) {
-            drawTextWithLineBreaks(["Warmth of heat in cold hearts of mine "], canvas.width / 2, canvas.height / 2, fontSize, lineHeight);
+            drawTextWithLineBreaks(["Silence of too much louder ,Not surfing on surface adventures "], canvas.width / 2, canvas.height / 2, fontSize, lineHeight);
         } else {
-            context.fillText("Warmth of heat in cold hearts of mine ", canvas.width/2, canvas.height/2);
+            context.fillText("Silence of too much louder ,Not surfing on surface adventures", canvas.width/2, canvas.height/2);
         }
         
         opacity = opacity - 0.01;
@@ -202,9 +202,9 @@ function drawText() {
 
 
         if (window.innerWidth < 600) {
-            drawTextWithLineBreaks(["Silence of too much louder ,Not surfing on surface adventures ,A warm touch of  love,That’s my love ,That’s she Aarya!"], canvas.width / 2, (canvas.height/2 + 60), fontSize, lineHeight);
+            drawTextWithLineBreaks([",A warm touch of  love,That’s my love,That’s she Aarya!"], canvas.width / 2, (canvas.height/2 + 60), fontSize, lineHeight);
         } else {
-            context.fillText("Silence of too much louder ,Not surfing on surface adventures ,A warm touch of  love,That’s my love ,That’s she Aarya", canvas.width/2, (canvas.height/2 + 50));
+            context.fillText(",A warm touch of  love,That’s my love,That’s she Aarya", canvas.width/2, (canvas.height/2 + 50));
         }
 
         secondOpacity = secondOpacity + 0.01;
