@@ -91,13 +91,13 @@ function drawText() {
 
     if(frameNumber < 250){
         context.fillStyle = `rgba(45, 45, 255, ${opacity})`;
-        context.fillText("As planet spins around his sun,A farm embraces the autumn leaves", canvas.width/2, canvas.height/2);
+        context.fillText("As planet spins around his sun,A farm embraces the autumn leaves..", canvas.width/2, canvas.height/2);
         opacity = opacity + 0.01;
     }
     //fades out the text by decreasing the opacity
     if(frameNumber >= 250 && frameNumber < 500){
         context.fillStyle = `rgba(45, 45, 255, ${opacity})`;
-        context.fillText("As planet spins around his sun,A farm embraces the autumn leaves", canvas.width/2, canvas.height/2);
+        context.fillText("As planet spins around his sun,A farm embraces the autumn leaves..", canvas.width/2, canvas.height/2);
         opacity = opacity - 0.01;
     }
 
