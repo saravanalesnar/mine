@@ -14,7 +14,7 @@ try {
     
     // REPLACE THESE TWO LINES
     $mail->Username   = 'msakthivel.bear@gmail.com'; 
-    $mail->Password   = 'uqnp ftqo oqmn flot'; // Use an app password for Gmail
+    $mail->Password   = 'uqnpftqooqmnflot'; // Use an app password for Gmail
 
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
     $mail->Port       = 587;
