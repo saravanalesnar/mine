@@ -14,7 +14,7 @@ try {
     $mail->Username   = 'msakthivel.bear@gmail.com'; 
     $mail->Password   = 'uqnpftqooqmnflot'; // Your 16-digit App Password
     $mail->SMTPSecure = 'ssl';                  // Required for Gmail
-    $mail->Port       = 465;                    // Required for Gmail
+    $mail->Port       = 465;                    // Required for Gmai
 
     // 2. Recipients
     $mail->setFrom('msakthivel.bear@gmail.com', 'Sakthi');
