@@ -52,20 +52,21 @@ const button = document.getElementById("valentinesButton");
 
 button.addEventListener("click", () => {
   if (button.textContent === "Click Me! ❤") {
-    button.textContent = "loading...";
+    button.textContent = "Sending...";
+
     fetch('send_mail.php')
-      .then(response => {
-        if (response.ok) {
+      .then(response => response.text()) // Get the text response from PHP
+      .then(data => {
+        if (data.includes("SUCCESS")) {
           button.textContent = "Check Your Email 🙃";
         } else {
-          console.error('Failed to send email');
+          console.error(data); // Shows the specific Gmail error in Console
           button.textContent = "Error 😞";
         }
       })
       .catch(error => {
-        // Handle network errors or other issues
         console.error('Error:', error);
-        button.textContent = "Error 😞";
+        button.textContent = "Network Error 😞";
       });
   }
 });
